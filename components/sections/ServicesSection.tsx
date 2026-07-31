@@ -32,7 +32,7 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => {
               <Image src={service.image} alt={service.title} fill className="object-cover transition duration-500 hover:scale-105" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
             </div>
             <div className="flex flex-1 flex-col p-6">
-              <p className="font-heading text-sm font-bold text-[#397533]">{String(index + 1).padStart(2, "0")}</p>
+              <p className="font-heading text-sm font-bold text-[#444444]">{String(index + 1).padStart(2, "0")}</p>
               <h3 className="font-heading text-xl font-black uppercase text-[#202020]">{service.title}</h3>
               <p className="mt-4 text-sm leading-6 text-[#625f59]">{service.description}</p>
             </div>

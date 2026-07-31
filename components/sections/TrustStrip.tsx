@@ -1,6 +1,6 @@
 const trustItems = [
   {
-    label: "Clear Upfront Quotes",
+    label: "Free Estimates",
     icon: (
       <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z" />
     ),
@@ -32,7 +32,7 @@ const trustItems = [
     ),
   },
   {
-    label: "Responsible Hauling",
+    label: "Direct Communication",
     icon: (
       <>
         <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z" />
@@ -48,11 +48,11 @@ const TrustStrip = () => {
       aria-label="Why customers choose PML Junk Removal"
       className="border-b border-[#d8d5ce] bg-[#f5f5f3]"
     >
-      <div className="mx-auto grid max-w-(--container-width) grid-cols-2 px-4 sm:px-6 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-(--container-width) grid-cols-[repeat(2,minmax(0,1fr))] px-4 sm:px-6 lg:grid-cols-[repeat(5,minmax(0,1fr))]">
         {trustItems.map((item) => (
           <div
             key={item.label}
-            className="flex min-h-24 items-center gap-3 border-b border-[#ddd9d1] px-3 py-4 last:col-span-2 lg:last:col-span-1 lg:border-b-0 lg:border-r lg:last:border-r-0"
+            className="flex min-h-24 min-w-0 items-center gap-3 border-b border-[#ddd9d1] px-3 py-4 last:col-span-2 lg:last:col-span-1 lg:border-b-0 lg:border-r lg:last:border-r-0"
           >
             <svg
               viewBox="0 0 24 24"
@@ -63,7 +63,7 @@ const TrustStrip = () => {
             >
               {item.icon}
             </svg>
-            <p className="font-heading text-base font-bold leading-5 text-[#202020]">
+            <p className="min-w-0 font-heading text-base font-bold leading-5 text-[#202020]">
               {item.label}
             </p>
           </div>

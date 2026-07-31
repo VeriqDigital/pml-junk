@@ -7,7 +7,7 @@ export const faqs = [
   {
     question: "How is pricing determined?",
     answer:
-      "Pricing depends on the amount and type of material, access to the items, and any special handling involved. We provide a clear quote before the work begins.",
+      "Pricing depends on the amount and type of material, access to the items, and any special handling involved. Jason can review the job details with you before work begins.",
   },
   {
     question: "What items do you take?",
@@ -22,12 +22,12 @@ export const faqs = [
   {
     question: "Do I need to move everything outside?",
     answer:
-      "No. Our crew can remove items from inside your home, garage, basement, office, or other accessible area. Just point out what needs to go.",
+      "No. PML can remove items from inside your home, garage, basement, office, or other accessible area. Just point out what needs to go.",
   },
   {
     question: "Do you offer full-property cleanouts?",
     answer:
-      "Yes. We can help with estate, rental, garage, basement, storage unit, and commercial cleanouts of many sizes.",
+      "PML can help with home, rental, garage, basement, storage unit, and business cleanouts. Contact Jason to discuss the scope of your project.",
   },
   {
     question: "Where do you provide service?",
@@ -35,8 +35,8 @@ export const faqs = [
       "PML Junk Removal is based in Johnston and serves customers throughout the surrounding Des Moines metro. Contact us to confirm availability at your address.",
   },
   {
-    question: "How do I request a quote?",
+    question: "How do I get a free estimate?",
     answer:
-      "Use the Request a Quote form with your contact information, pickup location, preferred date, and a description of the items. We will follow up to confirm the details.",
+      "Call or text Jason, or use the Get a Free Estimate form with your contact information, service location, and a description of what needs to be removed.",
   },
 ];

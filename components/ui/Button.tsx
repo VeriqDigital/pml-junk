@@ -18,7 +18,7 @@ const Button = ({
   type = "button",
 }: ButtonProps) => {
   const baseClasses =
-    "inline-flex cursor-pointer items-center justify-center border-2 px-6 py-3 font-heading text-base font-extrabold uppercase tracking-wide transition-colors focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-(--primary)";
+    "inline-flex cursor-pointer items-center justify-center border-2 px-6 py-3 font-heading text-base font-extrabold uppercase tracking-wide transition-colors focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-[#666666]";
 
   const variantClasses = {
     primary:

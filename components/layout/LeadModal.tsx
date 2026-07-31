@@ -1,24 +1,26 @@
 "use client";
 
 import type { FormEvent } from "react";
+import { siteConfig } from "@/config/site";
 
 export type ModalType = "service" | "contact";
 
 const modalContent = {
   service: {
     eyebrow: "Free estimate",
-    title: "Request a junk removal quote",
-    submitLabel: "Request quote",
-    successTitle: "Thanks, we received your quote request.",
+    title: "Get a free estimate",
+    submitLabel: "Preview estimate request",
+    successTitle: "Demo form preview complete",
     successMessage:
-      "The PML team will follow up to review the job and scheduling.",
+      "This unofficial demo does not send submissions. Please call, text, or email Jason directly.",
   },
   contact: {
     eyebrow: "Contact",
-    title: "Send a message",
-    submitLabel: "Send message",
-    successTitle: "Thanks, your message is in.",
-    successMessage: "Someone from the business will get back to you soon.",
+    title: "Contact Jason",
+    submitLabel: "Preview message",
+    successTitle: "Demo form preview complete",
+    successMessage:
+      "This unofficial demo does not send submissions. Please call, text, or email Jason directly.",
   },
 };
 
@@ -78,16 +80,25 @@ const LeadModal = ({
         </div>
 
         {hasSubmitted ? (
-          <div className="border border-(--accent)/40 bg-green-50 p-4">
+          <div className="border border-[#777777] bg-[#f3f3f1] p-4">
             <p className="font-semibold text-(--accent)">
               {activeContent.successTitle}
             </p>
             <p className="mt-2 text-sm text-[#625f59]">
               {activeContent.successMessage}
             </p>
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
+              <a href={siteConfig.contact.phoneHref} className="underline">Call {siteConfig.contact.phone}</a>
+              <a href={siteConfig.contact.smsHref} className="underline">Text Jason</a>
+              <a href={siteConfig.contact.emailHref} className="underline">{siteConfig.contact.email}</a>
+            </div>
           </div>
         ) : (
           <form className="space-y-4" onSubmit={onSubmit}>
+            <div className="border-l-4 border-[#111111] bg-[#f3f3f1] p-3 text-sm text-[#555555]">
+              <p className="font-bold text-[#171717]">Demo form only</p>
+              <p className="mt-1">This form does not send a message. Contact Jason directly at <a href={siteConfig.contact.phoneHref} className="font-semibold underline">{siteConfig.contact.phone}</a> or <a href={siteConfig.contact.emailHref} className="font-semibold underline">{siteConfig.contact.email}</a>.</p>
+            </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="block text-sm font-semibold text-[#202020]">
                 Name
@@ -99,13 +110,13 @@ const LeadModal = ({
                 />
               </label>
               <label className="block text-sm font-semibold text-[#202020]">
-                Email
+                Email{isBooking ? " (optional)" : ""}
                 <input
-                  required
+                  required={!isBooking}
                   type="email"
                   name="email"
                   className="mt-2 w-full border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition placeholder:text-[#8a867f] focus:border-(--accent)"
-                  placeholder="you@example.com"
+                  placeholder="Email address"
                 />
               </label>
             </div>
@@ -118,7 +129,7 @@ const LeadModal = ({
                   name="phone"
                   type="tel"
                   className="mt-2 w-full border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition placeholder:text-[#8a867f] focus:border-(--accent)"
-                  placeholder="(555) 555-5555"
+                  placeholder="Phone number"
                 />
               </label>
               {!isBooking && (
@@ -143,48 +154,24 @@ const LeadModal = ({
 
             {isBooking && (
               <>
-                <fieldset>
-                  <legend className="text-sm font-semibold text-[#202020]">
-                    Pickup details
-                  </legend>
-                  <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <label className="block text-sm font-semibold text-[#202020]">
+                    Service address or location
                     <input
                       required
                       name="pickup-address"
-                      className="w-full border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition placeholder:text-[#8a867f] focus:border-(--accent)"
-                      placeholder="Pickup address"
-                      aria-label="Pickup address"
-                    />
-                    <select required name="item-type" defaultValue="" aria-label="Type of junk" className="w-full border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition focus:border-(--accent)">
-                      <option value="" disabled>Type of junk</option>
-                      <option value="household">Household junk</option>
-                      <option value="furniture-appliances">Furniture or appliances</option>
-                      <option value="cleanout">Property cleanout</option>
-                      <option value="yard-debris">Yard debris</option>
-                      <option value="construction">Construction debris</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                </fieldset>
-
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <label className="block text-sm font-semibold text-[#202020]">
-                    Preferred date
-                    <input
-                      required
-                      name="preferred-date"
-                      type="date"
+                      placeholder="Johnston, IA"
                       className="mt-2 w-full border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition focus:border-(--accent)"
                     />
                   </label>
                   <label className="block text-sm font-semibold text-[#202020]">
-                    Preferred time
-                    <input
-                      required
-                      name="preferred-time"
-                      type="time"
-                      className="mt-2 w-full border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition focus:border-(--accent)"
-                    />
+                    Preferred contact method
+                    <select required name="preferred-contact" defaultValue="" className="mt-2 w-full border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition focus:border-(--accent)">
+                      <option value="" disabled>Choose one</option>
+                      <option value="call">Call</option>
+                      <option value="text">Text</option>
+                      <option value="email">Email</option>
+                    </select>
                   </label>
                 </div>
               </>
@@ -210,7 +197,7 @@ const LeadModal = ({
                 type="button"
                 onClick={onClose}
                 disabled={isSubmitting}
-                className="cursor-pointer border border-[#aaa69e] px-5 py-2.5 font-semibold text-[#4f4c47] transition hover:bg-[#f3f0e8]"
+                className="cursor-pointer border border-[#aaa69e] px-5 py-2.5 font-semibold text-[#4f4c47] transition hover:bg-[#f3f3f1]"
               >
                 Cancel
               </button>

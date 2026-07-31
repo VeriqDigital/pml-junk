@@ -4,7 +4,7 @@ import FAQ from "@/components/sections/FAQ";
 import Hero from "@/components/sections/Hero";
 import LocationSection from "@/components/sections/LocationSection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import ContactCtaSection from "@/components/sections/ContactCtaSection";
 import TrustStrip from "@/components/sections/TrustStrip";
 import Section from "@/components/ui/Section";
 
@@ -13,8 +13,8 @@ export default function Home() {
     <>
       <Hero />
       <TrustStrip />
-      <Section id="testimonials">
-        <TestimonialsSection />
+      <Section id="contact-jason">
+        <ContactCtaSection />
       </Section>
       <Section id="services">
         <ServicesSection />

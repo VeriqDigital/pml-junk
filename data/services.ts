@@ -6,9 +6,9 @@ export const services = [
     image: "/pexels-ramonkaphotography-38300321.jpg",
   },
   {
-    title: "Home & Estate Cleanouts",
+    title: "Home Cleanouts",
     description:
-      "Clear out unwanted items from homes, estates, rentals, basements, garages, and storage spaces with one dependable crew.",
+      "Clear out unwanted items from homes, rentals, basements, garages, and storage spaces with direct communication from Jason.",
     image: "/pexels-jakobjin-13885592.jpg",
   },
   {
@@ -32,7 +32,7 @@ export const services = [
   {
     title: "Junk Hauling",
     description:
-      "From a few unwanted items to a full load, our team handles the lifting, loading, hauling, and responsible disposal.",
+      "From a few unwanted items to a larger cleanup, PML handles the lifting, loading, and hauling.",
     image: "/pexels-guilherme-pedrosa-2156844062-34406282.jpg",
   },
   {
@@ -44,7 +44,7 @@ export const services = [
   {
     title: "Commercial Cleanouts",
     description:
-      "Offices, retail spaces, rental properties, and storage areas get a fast, organized cleanout with minimal disruption.",
+      "PML can help remove unwanted items from offices, rental properties, and business storage areas.",
     image: "/pexels-thomas-lin-2951901-15432186.jpg",
   },
 ];

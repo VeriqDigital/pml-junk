@@ -37,7 +37,7 @@ const useLeadModal = () => {
     setActiveModal(null);
   };
 
-  const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSubmitError("");
 
@@ -45,45 +45,7 @@ const useLeadModal = () => {
       return;
     }
 
-    const formData = new FormData(event.currentTarget);
-    const payload = {
-      type: activeModal,
-      name: String(formData.get("name") ?? ""),
-      email: String(formData.get("email") ?? ""),
-      phone: String(formData.get("phone") ?? ""),
-      topic: String(formData.get("topic") ?? ""),
-      pickupAddress: String(formData.get("pickup-address") ?? ""),
-      itemType: String(formData.get("item-type") ?? ""),
-      preferredDate: String(formData.get("preferred-date") ?? ""),
-      preferredTime: String(formData.get("preferred-time") ?? ""),
-      message: String(formData.get("message") ?? ""),
-    };
-
-    setIsSubmitting(true);
-
-    const response = await fetch("/api/leads", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    }).catch(() => null);
-    const data = response
-      ? ((await response.json().catch(() => null)) as { message?: string } | null)
-      : null;
-
     setIsSubmitting(false);
-
-    if (!response) {
-      setSubmitError("Could not connect. Please try again.");
-      return;
-    }
-
-    if (!response.ok) {
-      setSubmitError(data?.message ?? "Something went wrong. Please try again.");
-      return;
-    }
-
     setSubmittedModal(activeModal);
   };
 

@@ -6,14 +6,14 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `Learn more about ${siteConfig.name} and our straightforward approach to junk removal in Johnston, Iowa.`,
+  description: `About ${siteConfig.name}, presented in an unofficial Veriq website concept.`,
 };
 
 const companyValues = [
   {
-    title: "Clear quotes",
+    title: "Direct communication",
     description:
-      "We explain the scope and price before work begins so you know what to expect.",
+      "Work directly with Jason to discuss what needs to go and what the job involves.",
   },
   {
     title: "Respectful service",
@@ -34,24 +34,24 @@ export default function AboutPage() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="font-heading text-lg font-bold text-(--accent)">
-              Your local Johnston hauling crew
+              Locally owned in Johnston
             </p>
             <h1 className="mt-3 max-w-2xl font-heading text-5xl font-bold leading-[1.05] text-[#202020] md:text-6xl">
               The easy way to clear out what you no longer need
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#625f59]">
-              At {siteConfig.name}, we believe junk removal should be simple:
-              show us what needs to go, receive a clear quote, and let our crew
-              handle the hard work from start to finish.
+              {siteConfig.name} is locally owned and operated by Jason Paullin
+              in Johnston, Iowa. Call or text Jason to discuss what needs to go,
+              then let PML handle the lifting, loading, and hauling.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-8 text-[#625f59]">
               Whether you are clearing one bulky item, an entire property, or
-              debris from a project, our goal is to give you back a clean,
-              usable space without the stress.
+              debris from a project, the service is designed to help you get
+              back a clean, usable space without doing the heavy lifting.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="/services">View Services</Button>
-              <Button href="/contact" variant="secondary">Contact Us</Button>
+              <Button href={siteConfig.contact.phoneHref} variant="secondary">Call Jason</Button>
             </div>
           </div>
 
@@ -118,9 +118,9 @@ export default function AboutPage() {
               Serving Johnston and the Des Moines metro
             </h2>
             <p className="mt-5 text-lg leading-8 text-[#625f59]">
-              Based in Johnston, our crew helps homeowners, landlords,
-              property managers, and businesses throughout the surrounding
-              metro clear unwanted items quickly.
+              Based in Johnston, PML helps homeowners, landlords, property
+              managers, and businesses throughout the surrounding metro clear
+              unwanted items.
             </p>
             <div className="mt-7">
               <Button

@@ -20,17 +20,22 @@ const robotoCondensed = Roboto_Condensed({
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
+    default: "PML Junk Removal Website Concept | Veriq",
+    template: `%s | PML Website Concept by Veriq`,
   },
   description: siteConfig.description,
-  metadataBase: new URL(siteConfig.url),
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   openGraph: {
-    title: siteConfig.name,
+    title: "PML Junk Removal Website Concept | Veriq",
     description: siteConfig.description,
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    images: ["/PML logo.png"],
+    siteName: "Veriq Website Concept",
     locale: siteConfig.locale,
     type: "website",
   },
