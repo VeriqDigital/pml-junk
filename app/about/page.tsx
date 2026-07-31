@@ -5,7 +5,7 @@ import Section from "@/components/ui/Section";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About PML Junk Removal",
   description: `About ${siteConfig.name}, presented in an unofficial Veriq website concept.`,
 };
 
@@ -18,12 +18,12 @@ const companyValues = [
   {
     title: "Respectful service",
     description:
-      "We work carefully around your home or business and treat your property like it is our own.",
+      "Contact Jason to discuss access details and any care needed around the property.",
   },
   {
-    title: "A cleaner finish",
+    title: "Clear next steps",
     description:
-      "We load the unwanted items, haul them away, and leave the work area ready to use again.",
+      "Review the items, location, and job scope directly with Jason before scheduling.",
   },
 ] as const;
 
@@ -45,9 +45,9 @@ export default function AboutPage() {
               then let PML handle the lifting, loading, and hauling.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-8 text-[#625f59]">
-              Whether you are clearing one bulky item, an entire property, or
-              debris from a project, the service is designed to help you get
-              back a clean, usable space without doing the heavy lifting.
+              Whether you have one bulky item or a larger cleanup in mind,
+              contact Jason to confirm the items, access details, service area,
+              and current availability.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="/services">View Services</Button>
@@ -103,7 +103,7 @@ export default function AboutPage() {
           <div className="relative min-h-90 overflow-hidden border border-[#d8d5ce] bg-[#ece9e2]">
             <Image
               src="/pexels-jakobjin-13885592.jpg"
-              alt="A cluttered space ready for a complete cleanout"
+              alt="Household items in a cluttered garage"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -115,12 +115,12 @@ export default function AboutPage() {
               Local and ready to help
             </p>
             <h2 className="mt-3 font-heading text-4xl font-bold text-[#202020] md:text-5xl">
-              Serving Johnston and the Des Moines metro
+              Johnston and Des Moines metro inquiries
             </h2>
             <p className="mt-5 text-lg leading-8 text-[#625f59]">
-              Based in Johnston, PML helps homeowners, landlords, property
-              managers, and businesses throughout the surrounding metro clear
-              unwanted items.
+              PML Junk Removal is based in Johnston, Iowa. Contact Jason
+              directly to confirm service availability at your address in the
+              surrounding metro.
             </p>
             <div className="mt-7">
               <Button

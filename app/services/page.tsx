@@ -5,7 +5,7 @@ import Section from "@/components/ui/Section";
 export const metadata: Metadata = {
   title: "Junk Removal Services",
   description:
-    "Junk removal and cleanout services presented in an unofficial Veriq website concept for PML Junk Removal.",
+    "Junk removal service examples presented in an unofficial Veriq website concept for PML Junk Removal.",
 };
 
 export default function ServicesPage() {

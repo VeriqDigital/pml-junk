@@ -53,7 +53,7 @@ const Navbar = () => {
             Locally owned in Johnston
           </p>
           <p className="mt-2 text-xs leading-5 text-[#4f4c47]">
-            Work directly with Jason from the first message through pickup.
+            Call, text, or email Jason directly to discuss a pickup.
           </p>
         </div>
 
@@ -137,6 +137,7 @@ const Navbar = () => {
               isMenuOpen ? "Close navigation menu" : "Open navigation menu"
             }
             aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation-menu"
             onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
           >
             <span className="grid gap-1.5" aria-hidden="true">
@@ -165,7 +166,7 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="w-full border-t border-[#d8d2c7] bg-white p-2 text-[#252525] shadow-[0_12px_30px_rgba(0,0,0,0.15)] lg:hidden">
+        <div id="mobile-navigation-menu" className="w-full border-t border-[#d8d2c7] bg-white p-2 text-[#252525] shadow-[0_12px_30px_rgba(0,0,0,0.15)] lg:hidden">
           <div className="grid gap-1">
             <a href={siteConfig.contact.emailHref} onClick={() => setIsMenuOpen(false)} className="block border-b border-[#e5e0d6] px-4 py-3 font-bold transition hover:bg-[#f3f3f1]">
               Email {siteConfig.contact.email}

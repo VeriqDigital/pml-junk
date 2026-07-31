@@ -28,7 +28,7 @@ const Footer = () => {
               {siteConfig.description}
             </p>
             <p className="mt-5 font-heading text-lg font-bold">
-              Work directly with Jason from the first message through pickup.
+              Call, text, or email Jason directly to discuss a pickup.
             </p>
           </div>
 
@@ -87,7 +87,7 @@ const Footer = () => {
               <Link
                 href="https://www.veriqdigital.com/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="transition hover:text-(--primary)"
               >
                 Veriq Digital

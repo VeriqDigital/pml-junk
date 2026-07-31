@@ -32,6 +32,7 @@ const Button = ({
       <Link
         href={href}
         target={newTab ? "_blank" : undefined}
+        rel={newTab ? "noopener noreferrer" : undefined}
         className={`${baseClasses} ${variantClasses[variant]}`}
       >
         {children}

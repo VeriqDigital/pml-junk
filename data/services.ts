@@ -2,31 +2,31 @@ export const services = [
   {
     title: "Appliance Removal",
     description:
-      "We haul away refrigerators, washers, dryers, stoves, and other bulky appliances so you do not have to move them yourself.",
+      "Contact Jason about removing refrigerators, washers, dryers, stoves, or other bulky appliances and confirm any item-specific requirements.",
     image: "/pexels-ramonkaphotography-38300321.jpg",
   },
   {
     title: "Home Cleanouts",
     description:
-      "Clear out unwanted items from homes, rentals, basements, garages, and storage spaces with direct communication from Jason.",
+      "Discuss unwanted items in a home, rental, basement, garage, or storage space and confirm the scope directly with Jason.",
     image: "/pexels-jakobjin-13885592.jpg",
   },
   {
     title: "Furniture Removal",
     description:
-      "Couches, tables, cabinets, dressers, and other heavy furniture are removed carefully and hauled away for you.",
+      "Ask Jason about pickup for couches, tables, cabinets, dressers, or other heavy furniture.",
     image: "/pexels-rdne-7464712.jpg",
   },
   {
     title: "Mattress Removal",
     description:
-      "Make room again with convenient pickup of mattresses, box springs, bed frames, and other bulky bedroom items.",
+      "Contact Jason to confirm pickup options for mattresses, box springs, bed frames, or other bulky bedroom items.",
     image: "/pexels-mikebird-6316243.jpg",
   },
   {
     title: "Yard Waste Removal",
     description:
-      "We remove branches, brush, leaves, and general outdoor debris after yard projects, storms, or seasonal cleanup.",
+      "Ask whether branches, brush, leaves, or other outdoor debris can be included in a pickup.",
     image: "/pexels-zeynep-sude-emek-193601188-29359069.jpg",
   },
   {
@@ -38,13 +38,13 @@ export const services = [
   {
     title: "Construction Debris",
     description:
-      "Keep your project moving with removal of non-hazardous remodeling debris, scrap materials, and jobsite clutter.",
+      "Contact Jason to confirm whether non-hazardous remodeling debris, scrap materials, or jobsite clutter fits the current service scope.",
     image: "/pexels-christafaari-34019842.jpg",
   },
   {
     title: "Commercial Cleanouts",
     description:
-      "PML can help remove unwanted items from offices, rental properties, and business storage areas.",
+      "Businesses and property managers can contact Jason to discuss unwanted items in offices, rentals, or storage areas.",
     image: "/pexels-thomas-lin-2951901-15432186.jpg",
   },
 ];

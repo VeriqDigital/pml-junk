@@ -1,5 +1,3 @@
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import FAQ from "@/components/sections/FAQ";
 import Hero from "@/components/sections/Hero";
 import LocationSection from "@/components/sections/LocationSection";
@@ -25,8 +23,6 @@ export default function Home() {
       <Section id="faq">
         <FAQ />
       </Section>
-      <Analytics />
-      <SpeedInsights />
     </>
   );
 }

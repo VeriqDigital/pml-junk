@@ -10,7 +10,7 @@ const LocationSection = () => {
             Service area
           </p>
           <h2 className="mt-4 max-w-3xl font-heading text-4xl font-black uppercase leading-tight text-[#202020] md:text-6xl">
-            Proudly Serving Johnston
+            Based in Johnston
           </h2>
         </div>
         <div>

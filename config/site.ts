@@ -35,10 +35,10 @@ export const footerLinks: NavItem[] = [
   { label: "Services", href: "/#services" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "Get a Free Estimate", modal: "service" },
+  { label: "Preview Estimate Form", modal: "service" },
 ];
 
 export const primaryCta = {
-  label: "Get a Free Estimate",
+  label: "Preview Estimate Form",
   modal: "service",
 } as const satisfies { label: string; modal: ModalType };

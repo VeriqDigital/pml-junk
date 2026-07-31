@@ -26,8 +26,8 @@ const ContactCtaSection = () => {
           Ready to get your space back?
         </h2>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-[#666666]">
-          Call or text Jason with a description or photos of what needs to be
-          removed, and PML can follow up about your estimate.
+          Call or text Jason directly with a description or photos of what
+          needs to be removed and ask about an estimate.
         </p>
       </div>
 

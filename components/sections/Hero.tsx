@@ -31,15 +31,15 @@ const Hero = () => {
               <span className="block">Space Reclaimed.</span>
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-7 text-[#4f4c47]">
-              Junk removal for homes, rentals, and businesses in Johnston,
-              Iowa and the surrounding Des Moines metro.
+              Junk removal inquiries in Johnston, Iowa and the surrounding Des
+              Moines metro.
             </p>
             <p className="mt-3 max-w-lg text-lg leading-7 text-[#4f4c47]">
-              From one bulky item to a complete cleanout, we do the lifting,
-              loading, and hauling.
+              Contact Jason to discuss what needs to go. PML handles the
+              lifting, loading, and hauling.
             </p>
             <p className="mt-5 font-heading text-lg font-bold text-[#202020]">
-              Work directly with Jason from the first message through pickup.
+              Call, text, or email Jason directly to discuss a pickup.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button onClick={() => openModal(primaryCta.modal)}>

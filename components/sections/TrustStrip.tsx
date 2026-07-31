@@ -1,6 +1,6 @@
 const trustItems = [
   {
-    label: "Free Estimates",
+    label: "Ask About an Estimate",
     icon: (
       <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z" />
     ),
@@ -15,7 +15,7 @@ const trustItems = [
     ),
   },
   {
-    label: "We Do the Heavy Lifting",
+    label: "Lifting, Loading & Hauling",
     icon: (
       <>
         <path d="m14.7 6.3 3-3a4 4 0 0 1-5 5l-7.9 7.9a2 2 0 0 0 2.8 2.8l7.9-7.9a4 4 0 0 0 5-5l-3 3" />
@@ -23,7 +23,7 @@ const trustItems = [
     ),
   },
   {
-    label: "Home & Business Cleanouts",
+    label: "Home & Business Inquiries",
     icon: (
       <>
         <path d="M5 17h14l1-5-3-4H7l-3 4 1 5Z" />
@@ -45,7 +45,7 @@ const trustItems = [
 const TrustStrip = () => {
   return (
     <section
-      aria-label="Why customers choose PML Junk Removal"
+      aria-label="PML Junk Removal concept service highlights"
       className="border-b border-[#d8d5ce] bg-[#f5f5f3]"
     >
       <div className="mx-auto grid max-w-(--container-width) grid-cols-[repeat(2,minmax(0,1fr))] px-4 sm:px-6 lg:grid-cols-[repeat(5,minmax(0,1fr))]">

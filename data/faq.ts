@@ -2,41 +2,41 @@ export const faqs = [
   {
     question: "How does junk removal work?",
     answer:
-      "Send us a description or photos of what you need removed. We will discuss the job, provide a quote, schedule a convenient pickup, and handle the lifting and hauling.",
+      "Call or text Jason directly with a description or photos of what needs to be removed. Ask about availability, scope, and an estimate before scheduling.",
   },
   {
     question: "How is pricing determined?",
     answer:
-      "Pricing depends on the amount and type of material, access to the items, and any special handling involved. Jason can review the job details with you before work begins.",
+      "Pricing can depend on the amount and type of material, access to the items, and any special handling involved. Review the job details directly with Jason before scheduling.",
   },
   {
     question: "What items do you take?",
     answer:
-      "We remove most household and commercial junk, including furniture, appliances, mattresses, yard debris, and non-hazardous renovation debris. Ask us if you have a specific item in mind.",
+      "This concept highlights common junk-removal categories such as furniture, appliances, mattresses, household items, yard debris, and renovation debris. Confirm any specific item directly with Jason.",
   },
   {
     question: "What items can you not remove?",
     answer:
-      "Hazardous materials such as chemicals, fuels, and certain paints require special disposal. Tell us what you have and we will let you know whether we can take it.",
+      "Some materials may require specialized disposal. Confirm chemicals, fuels, paints, or other unusual items directly with Jason before scheduling.",
   },
   {
     question: "Do I need to move everything outside?",
     answer:
-      "No. PML can remove items from inside your home, garage, basement, office, or other accessible area. Just point out what needs to go.",
+      "Access needs can vary by job. Ask Jason whether items should be moved outside or can be collected in place.",
   },
   {
     question: "Do you offer full-property cleanouts?",
     answer:
-      "PML can help with home, rental, garage, basement, storage unit, and business cleanouts. Contact Jason to discuss the scope of your project.",
+      "Contact Jason to confirm whether PML can accommodate the type and size of cleanout you have in mind.",
   },
   {
     question: "Where do you provide service?",
     answer:
-      "PML Junk Removal is based in Johnston and serves customers throughout the surrounding Des Moines metro. Contact us to confirm availability at your address.",
+      "PML Junk Removal is based in Johnston, Iowa. Contact Jason directly to confirm availability at your address in the surrounding Des Moines metro.",
   },
   {
-    question: "How do I get a free estimate?",
+    question: "How do I ask about an estimate?",
     answer:
-      "Call or text Jason, or use the Get a Free Estimate form with your contact information, service location, and a description of what needs to be removed.",
+      "Call or text Jason directly. The form on this concept site is a non-submitting interface demonstration and does not send information to PML Junk Removal.",
   },
 ];

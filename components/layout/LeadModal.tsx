@@ -7,12 +7,12 @@ export type ModalType = "service" | "contact";
 
 const modalContent = {
   service: {
-    eyebrow: "Free estimate",
-    title: "Get a free estimate",
+    eyebrow: "Estimate preview",
+    title: "Preview the estimate form",
     submitLabel: "Preview estimate request",
     successTitle: "Demo form preview complete",
     successMessage:
-      "This unofficial demo does not send submissions. Please call, text, or email Jason directly.",
+      "This is an unofficial website concept, so this form does not submit information to PML Junk Removal. To contact the business directly, call or text Jason at (515) 901-3779.",
   },
   contact: {
     eyebrow: "Contact",
@@ -20,7 +20,7 @@ const modalContent = {
     submitLabel: "Preview message",
     successTitle: "Demo form preview complete",
     successMessage:
-      "This unofficial demo does not send submissions. Please call, text, or email Jason directly.",
+      "This is an unofficial website concept, so this form does not submit information to PML Junk Removal. To contact the business directly, call or text Jason at (515) 901-3779.",
   },
 };
 
@@ -72,10 +72,11 @@ const LeadModal = ({
           <button
             type="button"
             onClick={onClose}
+            autoFocus
             className="flex size-9 cursor-pointer items-center justify-center border border-[#aaa69e] text-xl leading-none text-[#625f59] transition hover:border-(--accent) hover:text-(--accent)"
             aria-label={`Close ${activeContent.title.toLowerCase()} form`}
           >
-            x
+            ×
           </button>
         </div>
 
@@ -144,8 +145,8 @@ const LeadModal = ({
                       Choose a topic
                     </option>
                     <option value="general">General question</option>
-                    <option value="service">Service</option>
-                    <option value="billing">Billing</option>
+                    <option value="service">Service availability</option>
+                    <option value="items">Item acceptance</option>
                     <option value="other">Other</option>
                   </select>
                 </label>
@@ -186,8 +187,8 @@ const LeadModal = ({
                 className="mt-2 w-full resize-none border border-[#aaa69e] bg-white px-3 py-2 text-[#202020] outline-none transition placeholder:text-[#8a867f] focus:border-(--accent)"
                 placeholder={
                   isBooking
-                    ? "Describe the items, approximate amount, access details, or anything else we should know."
-                    : "How can we help?"
+                    ? "Describe the items, approximate amount, access details, or anything else Jason should know."
+                    : "What would you like to ask Jason?"
                 }
               />
             </label>

@@ -27,6 +27,7 @@ const FAQ = () => {
               onClick={() => setOpenIndex(isOpen ? null : index)}
               className="w-full self-start cursor-pointer text-left"
               aria-expanded={isOpen}
+              aria-controls={`faq-answer-${index}`}
             >
               <div className="w-full border border-[#d8d5ce] bg-white p-5">
                 <div className="flex items-start justify-between gap-4">
@@ -37,7 +38,11 @@ const FAQ = () => {
                     {isOpen ? "x" : "+"}
                   </span>
                 </div>
-                {isOpen && <p className="pt-4 text-[#625f59]">{item.answer}</p>}
+                {isOpen && (
+                  <p id={`faq-answer-${index}`} className="pt-4 text-[#625f59]">
+                    {item.answer}
+                  </p>
+                )}
               </div>
             </button>
           );
